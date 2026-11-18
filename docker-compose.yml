@@ -1,0 +1,26 @@
+
+services:
+  ml:
+    build:
+      context: ./ml
+    container_name: bairroemdia-ml
+    ports:
+      - "8000:8000"
+    environment:
+      MODEL_PATH: /app/model/random_forest.joblib
+    volumes:
+      - ./ml/model:/app/model
+    restart: unless-stopped
+
+bairro-em-dia-ia-ml/
+├── ml/
+│   ├── app.py
+│   ├── Dockerfile
+│   ├── notebook.ipynb
+│   ├── README.md
+│   └── requirements.txt
+├── dados/
+│   └── README.md
+├── RELATORIO_ML.md
+├── docker-compose.yml
+└── README.md

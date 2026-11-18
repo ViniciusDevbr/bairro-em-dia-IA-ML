@@ -1,0 +1,41 @@
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Modelos treinados (artefatos gerados)
+ml/model/*.joblib
+ml/model/*.pkl
+ml/model/*.json
+
+# Dados baixados
+dados/*.csv
+dados/*.xlsx
+dados/*.parquet
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+!.env.example
+
+# Arquivos temporários
+*.tmp
+*.bak
